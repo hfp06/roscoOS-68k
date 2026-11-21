@@ -56,8 +56,6 @@ Short version: `ver`, `ps`, `mem`, then `run cpuinfo.bin` and `run irqframe.bin`
 - `mbasic_rosco5m.bin` — BASIC V4.0 interpreter
 - `mini-edit5m.bin`, `hello.bin`, `guess.bin`, `busy5m.bin` — sample programs
 - Test programs: `cpuinfo.bin`, `irqframe.bin`, `sleepirq.bin`, `sleepprobe.bin`, `test4_irq5m.bin`
-- `rosco_m68k_even.rom` / `rosco_m68k_odd.rom` — original Classic 2.42 ROM images
-  (to restore a stock machine if needed)
 - `CHANGELOG.md`, `LICENSE`
 
 The source code is not distributed.
