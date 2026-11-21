@@ -24,7 +24,7 @@ written in C and 68k assembly.
 | | |
 |---|---|
 | RAM | **4 MB minimum** — the kernel is linked at 0x400000 |
-| CPU | MC68000 or MC68010 (validated at 10 and 16 MHz) |
+| CPU | MC68000 or MC68010 (validated at 10, 12 and 16 MHz) |
 | Firmware | ROSCO_M68K **Classic 2.42, stock** — do not modify the ROMs |
 | Storage | SD card, partition 1 (FAT) |
 
@@ -88,7 +88,7 @@ Petit système d'exploitation multitâche pour **ROSCO_M68K** (MC68000 / MC68010
 | | |
 |---|---|
 | RAM | **4 Mo minimum** — le noyau est linké à 0x400000 |
-| CPU | MC68000 ou MC68010 (validés à 10 et 16 MHz) |
+| CPU | MC68000 ou MC68010 (validés à 10, 12 et 16 MHz) |
 | Firmware | ROSCO_M68K **Classic 2.42, d'origine** — ne pas modifier les ROMs |
 | Stockage | carte SD, partition 1 (FAT) |
 
