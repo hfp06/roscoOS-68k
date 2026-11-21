@@ -2,6 +2,21 @@
 
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 
+## v0.9.7-preempt — 2026-11-21
+
+- Multitâche préemptif actif **au démarrage** (`g_preempt_enabled = 1`)
+- Cycle de vie complet des tâches : création, sortie, `kill <tid>|all` ;
+  piles rendues au heap, slots recyclés, `g_task_count` exact
+- CPU et fréquence lus dans le **SDB** (0x41C) — plus de « MC68010 @ 12 MHz » codé en dur
+- Frames d'exception des tâches IRQ : 6 octets (68000) ou 8 octets (68010/020/030),
+  choisies au runtime selon le CPU
+- Chaînage IRQ vers le vecteur **sauvegardé à l'init**, plus d'adresse 0xE009A8 codée en dur
+- Validé sur firmware **Classic 2.42 d'origine**, à **10 MHz, 12 Mhz et 16 MHz** :
+  lecture/écriture SD (`cp` de 75 608 o), tâches IRQ préemptives, malloc/free concurrents
+- Connu : une carte SD lente peut faire échouer une grosse copie
+  (`ecriture incomplete`, fichier destination vidé)
+
+
 ## [Unreleased]
 
 ### Prévu
