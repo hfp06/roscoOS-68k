@@ -119,3 +119,15 @@ MIT — voir [LICENSE](LICENSE).
 
 
 Voir [CHANGELOG.md](CHANGELOG.md) pour l'historique des versions.
+
+## Validated on 68030 (emulated)
+
+roscoOS 0.9.7-CHAIN has been validated on an emulated MC68030 with 5 MB RAM
+(rosco-emulator, firmware 2.42 stock):
+
+![Boot roscoOS on 68030](docs/captures/roscoos_68030_5M_20261122.png)
+
+- MC68030 @ 45.7 MHz (Musashi calibration ~2x), 5,242,880 bytes RAM
+- SD v2 card, partition 1: `/ROSCODE1.BIN` (77,168 bytes)
+- roscoOS: RAM 5120 Ko, Heap 1632 Ko, SD OK
+- `irqframe`: SDB `0x6006FA94`, model=3 → 8-byte exception frame, OK
